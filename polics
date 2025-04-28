@@ -1,0 +1,14 @@
+using UnityEngine;
+
+public class Diplomacy : MonoBehaviour
+{
+    public void FormAlliance(string factionA, string factionB)
+    {
+        Debug.Log($"{factionA} formed an alliance with {factionB}!");
+    }
+
+    public void DeclareWar(string factionA, string factionB)
+    {
+        Debug.Log($"{factionA} declared war on {factionB}!");
+    }
+}
