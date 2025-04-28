@@ -1,0 +1,24 @@
+using UnityEngine;
+
+public class ResourceManager : MonoBehaviour
+{
+    public int Energy;
+    public int Food;
+    public int Minerals;
+
+    public void SpendResources(int energyCost, int foodCost, int mineralCost)
+    {
+        Energy -= energyCost;
+        Food -= foodCost;
+        Minerals -= mineralCost;
+
+        Debug.Log($"Resources: Energy({Energy}), Food({Food}), Minerals({Minerals})");
+    }
+
+    public void AddResources(int energyGain, int foodGain, int mineralGain)
+    {
+        Energy += energyGain;
+        Food += foodGain;
+        Minerals += mineralGain;
+    }
+}
