@@ -1,0 +1,13 @@
+using UnityEngine;
+
+public class Province : MonoBehaviour
+{
+    public string ProvinceName;
+    public string OwnerFaction;
+    public int Population;
+    public int Resources;
+
+    void OnMouseDown()
+    {
+        Debug.Log($"Selected Province: {ProvinceName}, Owner: {OwnerFaction}");
+    }
